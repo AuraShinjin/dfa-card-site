@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head> <link rel="stylesheet" href="style.css" />
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cartes DFA</title>
   <style>
     body {
-      background-color: #f0f0f0;
+      background-color: #1e1a2d;
       font-family: Arial, sans-serif;
       padding: 20px;
+      color: #f5f5f5;
     }
 
     h1 {
-      color: #333;
+      color: #b39ddb;
     }
 
     header {
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .cartes-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
-      gap: 20px; /* espace entre les cartes */
+      gap: 20px;
       justify-items: center;
+      margin-top: 40px;
     }
 
-   .cartes-grid img {
-  width: 90%;
-  height: calc(100vh / 1.2); /* quasi toute la hauteur de l'écran */
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
+    .cartes-grid img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      background: #2e1b4e; /* Fond violet sombre entre les cartes */
+      padding: 8px;
     }
 
     footer {
       margin-top: 40px;
       text-align: center;
-      color: #666;
+      color: #aaa;
     }
 
     a {
       text-decoration: none;
-      color: #0077cc;
+      color: #9c27b0;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
