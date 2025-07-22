@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cartes DFA</title>
   <style>
     body {
@@ -23,19 +23,19 @@
 
     .cartes-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
+      grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
       gap: 20px;
       justify-items: center;
       margin-top: 40px;
     }
 
     .cartes-grid img {
-      width: 100%;
-      max-width: 300px;
+      width: 80%;
+      max-width: 500px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      background: #2e1b4e; /* Fond violet sombre entre les cartes */
+      background: #2e1b4e;
       padding: 8px;
     }
 
@@ -54,6 +54,18 @@
     a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 768px) {
+      .cartes-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .cartes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
   </style>
 </head>
 <body>
@@ -71,7 +83,7 @@
     <img src="imagescard/A-120.jpg" alt="Carte A-120" />
     <img src="imagescard/AGAIN & AGAIN & AGAIN.jpg" alt="Carte AGAIN & AGAIN & AGAIN" />
     <img src="imagescard/AGENT 779.jpg" alt="Carte AGENT 779" />
-    <!-- Tu peux continuer à ajouter les autres cartes ici -->
+    <!-- Tu peux en ajouter autant que tu veux juste en dessous -->
   </main>
 
   <footer>
