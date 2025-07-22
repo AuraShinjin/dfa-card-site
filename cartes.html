@@ -10,28 +10,42 @@
       font-family: Arial, sans-serif;
       padding: 20px;
     }
+
     h1 {
       color: #333;
     }
-    .carte {
-      margin-bottom: 10px;
-      padding: 10px;
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    .cartes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 cartes par ligne */
+      gap: 20px; /* espace entre les cartes */
+      justify-items: center;
+    }
+
+    .cartes-grid img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
       background: white;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #666;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077cc;
     }
   </style>
-</head>
-<body>
-  <h1>Liste des cartes DFA (417)</h1>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les cartes DFA</title>
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -48,6 +62,7 @@
     <img src="images/A-120.png" alt="Carte A-120" />
     <img src="images/AGAIN & AGAIN & AGAIN.png" alt="Carte AGAIN & AGAIN & AGAIN" />
     <img src="images/AGENT 779.png" alt="Carte AGENT 779" />
+    <!-- Tu peux continuer à ajouter les autres cartes ici -->
   </main>
 
   <footer>
