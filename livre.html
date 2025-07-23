@@ -8,10 +8,11 @@
 
   <style>
     body {
-      background-color: #f7f7f7;
+      background-color: #1e0033;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      color: white;
     }
 
     header {
@@ -21,13 +22,13 @@
 
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
     }
 
     header p {
-      margin: 5px 0 20px;
+      margin: 10px 0 30px;
       font-style: italic;
-      color: #666;
+      color: #f0f0f0;
     }
 
     .page-image {
@@ -35,7 +36,7 @@
       max-width: 90vw;
       max-height: 90vh;
       margin: 30px auto;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       transition: transform 0.3s ease;
     }
@@ -44,10 +45,28 @@
       transform: scale(1.02);
     }
 
+    .return-link {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      padding: 12px 20px;
+      background-color: #8a2be2;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      width: fit-content;
+      transition: background-color 0.3s ease;
+    }
+
+    .return-link:hover {
+      background-color: #a95cff;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      color: #aaa;
+      color: #ccc;
       font-size: 0.9em;
     }
   </style>
@@ -59,6 +78,8 @@
   </header>
 
   <div id="book-pages"></div>
+
+  <a class="return-link" href="index.html">← Retour à l’accueil</a>
 
   <footer>
     <p>© 2025 DFA Card. Créé avec passion par Aura’.</p>
@@ -85,5 +106,6 @@
   </script>
 </body>
 </html>
+
 
 
