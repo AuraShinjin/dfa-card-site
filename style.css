@@ -82,3 +82,16 @@ footer {
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
+.page-image {
+  display: block;
+  max-width: 90vw; /* largeur max = 90% de la largeur de la fenêtre */
+  max-height: 90vh; /* hauteur max = 90% de la hauteur de la fenêtre */
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.page-image:hover {
+  transform: scale(1.02);
+}
