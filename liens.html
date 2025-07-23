@@ -4,68 +4,70 @@
   <meta charset="UTF-8">
   <title>4ème de Couverture</title>
   <style>
-    body, html {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
       height: 100%;
-      font-family: sans-serif;
-      background-color: #000;
-    }
-
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-image: url('https://via.placeholder.com/1200x800'); 
-      background-size: cover;
-      background-position: center;
-      z-index: -1;
-    }
-
-    .links-container {
-      position: absolute;
-      top: 5%;
-      width: 100%;
-      text-align: center;
+      font-family: Arial, sans-serif;
       color: white;
     }
 
-    .links-container a {
-      display: block;
-      margin: 1.5vh 0;
-      font-size: 2.5vw;
-      color: cyan;
+    .background {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      background: url('ImagesLivreRegles/4EMEDECOUVERTURE.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .link-container {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .link-container h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .link-container a {
+      color: #00ffcc;
       text-decoration: none;
-      text-shadow: 1px 1px 4px black;
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
     }
 
-    .links-container a:hover {
+    .link-container a:hover {
       text-decoration: underline;
-      color: #00ffff;
-    }
-
-    @media (max-width: 600px) {
-      .links-container a {
-        font-size: 5vw;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="background"></div>
+  <div class="background">
+    <div class="link-container">
+      <h2>LA CHAÎNE YOUTUBE OFFICIELLE :</h2>
+      <a href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank">www.youtube.com/@DFACARDCreateur-wd7zp</a>
 
-  <div class="links-container">
-    <a href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank">
-      LA CHAÎNE YOUTUBE OFFICIELLE : youtube.com/@DFACARDCreateur-wd7zp
-    </a>
-    <a href="https://drive.google.com/drive/folders/1v0bGm_TRJA2-xBTG6pZsWqO22YSHyDdj?usp=sharing" target="_blank">
-      LE GOOGLE DOC OFFICIEL
-    </a>
-    <a href="https://discord.gg/dcr69Nx6aW" target="_blank">
-      LE DISCORD OFFICIEL : discord.gg/dcr69Nx6aW
-    </a>
+      <h2>LE GOOGLE DOC OFFICIEL :</h2>
+      <a href="https://drive.google.com/drive/folders/1v0bGm_TRJA2-xBTG6pZsWqO22YSHyDdj?usp=sharing" target="_blank">
+        Google Drive - DFA Card
+      </a>
+
+      <h2>LE DISCORD OFFICIEL :</h2>
+      <a href="https://discord.gg/dcr69Nx6aW" target="_blank">discord.gg/dcr69Nx6aW</a>
+    </div>
   </div>
 </body>
 </html>
+
