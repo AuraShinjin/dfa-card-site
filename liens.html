@@ -3,32 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Liens DFA Card</title>
+  <title>Liens – DFA Card</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #2c003e;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .top-link {
+      margin: 20px;
+    }
+
+    .top-link a {
+      color: white;
+      text-decoration: none;
+      background-color: #5e1780;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .top-link a:hover {
+      background-color: #801fae;
+    }
+
+    .cover-image {
+      max-width: 95%;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Liens Officiels DFA Card</h1>
-    <a href="index.html" class="button">← Retour à l'accueil</a>
-  </header>
+  <div class="top-link">
+    <a href="index.html">← Retour à l’accueil</a>
+  </div>
 
-  <!-- Image avec map cliquable -->
-  <img src="62949E40-EAC9-463D-8976-86ED6103199C.jpeg" alt="Liens DFA Card" usemap="#liensdfa" style="width: 100%; height: auto;" />
+  <img src="ImagesLivreRegles/5D36B0B0-AC21-4406-BF1A-E50C0988AF92.jpeg" alt="Liens DFA Card" class="cover-image" usemap="#mapLiens" />
 
-  <map name="liensdfa">
-    <!-- Rectangle rouge - YouTube -->
-    <area shape="rect" coords="92,163,674,211" href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank" alt="Chaîne YouTube DFA Card" />
+  <map name="mapLiens">
+    <!-- Rectangle ROUGE : Chaîne YouTube -->
+    <area shape="rect" coords="90,165,675,210" href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank" alt="Chaîne YouTube officielle" />
 
-    <!-- Rectangle cyan - Google Doc -->
-    <area shape="rect" coords="92,221,674,267" href="https://drive.google.com/drive/folders/1v0bGm_TRJA2-xBTG6pZsWqO22YSHyDdj?usp=sharing" target="_blank" alt="Google Doc DFA Card" />
+    <!-- Rectangle CYAN : Google Doc -->
+    <area shape="rect" coords="90,222,675,265" href="https://drive.google.com/drive/folders/1v0bGm_TRJA2-xBTG6pZsWqO22YSHyDdj?usp=sharing" target="_blank" alt="Google Doc officiel" />
 
-    <!-- Rectangle jaune - Discord -->
-    <area shape="rect" coords="92,279,674,325" href="https://discord.gg/dcr69Nx6aW" target="_blank" alt="Serveur Discord DFA Card" />
+    <!-- Rectangle JAUNE : Discord -->
+    <area shape="rect" coords="90,279,675,320" href="https://discord.gg/dcr69Nx6aW" target="_blank" alt="Discord officiel" />
   </map>
-
-  <footer>
-    <p>© 2025 DFA Card. Créé par DFA Card Créateur/AuraShinjin.</p>
-  </footer>
 </body>
 </html>
+
 
