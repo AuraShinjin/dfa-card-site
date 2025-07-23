@@ -22,23 +22,24 @@
       left: 50%;
       transform: translateX(-50%);
       background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px 30px;
-      border-radius: 10px;
+      padding: 30px 40px;
+      border-radius: 15px;
       text-align: center;
       z-index: 10;
     }
 
     .link-container h2 {
       margin-bottom: 10px;
-      font-size: 20px;
+      font-size: 26px;
     }
 
     .link-container a {
       color: #00ffcc;
       text-decoration: none;
       display: block;
-      margin: 10px 0;
-      font-size: 18px;
+      margin: 12px 0 24px;
+      font-size: 22px;
+      font-weight: bold;
     }
 
     .link-container a:hover {
@@ -55,6 +56,26 @@
       position: relative;
       width: 100%;
     }
+
+    .home-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00ffcc;
+      color: black;
+      padding: 12px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 20;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #00ccaa;
+    }
   </style>
 </head>
 <body>
@@ -62,7 +83,9 @@
   <div class="image-wrapper">
     <div class="link-container">
       <h2>LA CHAÎNE YOUTUBE OFFICIELLE :</h2>
-      <a href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank">www.youtube.com/@DFACARDCreateur-wd7zp</a>
+      <a href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank">
+        www.youtube.com/@DFACARDCreateur-wd7zp
+      </a>
 
       <h2>LE GOOGLE DOC OFFICIEL :</h2>
       <a href="https://drive.google.com/drive/folders/1v0bGm_TRJA2-xBTG6pZsWqO22YSHyDdj?usp=sharing" target="_blank">
@@ -70,11 +93,15 @@
       </a>
 
       <h2>LE DISCORD OFFICIEL :</h2>
-      <a href="https://discord.gg/dcr69Nx6aW" target="_blank">discord.gg/dcr69Nx6aW</a>
+      <a href="https://discord.gg/dcr69Nx6aW" target="_blank">
+        discord.gg/dcr69Nx6aW
+      </a>
     </div>
 
     <img class="full-image" src="ImagesLivreRegles/4EMEDECOUVERTURE.jpg" alt="4ème de couverture">
   </div>
+
+  <button class="home-button" onclick="window.location.href='index.html'">🏠 Accueil</button>
 
 </body>
 </html>
