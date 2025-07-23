@@ -2,69 +2,70 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>4èmedeCouverture</title>
+  <title>4ème de Couverture</title>
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
       background-color: #000;
     }
 
-    .image-container {
-      position: relative;
-      width: 100%;
-      max-width: 9094px;
-      margin: 0 auto;
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('ImagesLivreRegles/4EMEDECOUVERTURE.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
     }
 
-    .image-container img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .link-zone {
+    .links-container {
       position: absolute;
-      cursor: pointer;
-    }
-
-    /* Zones invisibles cliquables */
-    .link1 {
-      top: 2275px;
-      left: 1021px;
-      width: 5396px;
-      height: 857px;
-    }
-
-    .link2 {
-      top: 3205px;
-      left: 446px;
-      width: 7108px;
-      height: 1195px;
-    }
-
-    .link3 {
-      top: 3930px;
-      left: 1448px;
-      width: 2530px;
-      height: 975px;
-    }
-
-    /* Rends ces zones invisibles mais actives */
-    .link-zone a {
-      display: block;
+      top: 5%;
       width: 100%;
-      height: 100%;
+      text-align: center;
+      color: white;
+    }
+
+    .links-container a {
+      display: block;
+      margin: 1.5vh 0;
+      font-size: 2.5vw;
+      color: cyan;
+      text-decoration: none;
+      text-shadow: 1px 1px 4px black;
+    }
+
+    .links-container a:hover {
+      text-decoration: underline;
+      color: #00ffff;
+    }
+
+    @media (max-width: 600px) {
+      .links-container a {
+        font-size: 5vw;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="image-container">
-    <img src="ImagesLivreRegles/4EMEDECOUVERTURE.jpg" alt="4èmedecouverture">
+  <div class="background"></div>
 
-    <!-- Zones cliquables -->
-    <div class="link-zone link1"><a href="https://www.youtube.com/@DFACARDCreateur-wd7zp"></a></div>
-    <div class="link-zone link2"><a href="https://drive.google.com/drive/folders/1v0bGm_TRJA2-xBTG6pZsWqO22YSHyDdj?usp=sharing"></a></div>
-    <div class="link-zone link3"><a href="https://discord.gg/dcr69Nx6aW"></a></div>
+  <div class="links-container">
+    <a href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank">
+      LA CHAÎNE YOUTUBE OFFICIELLE : youtube.com/@DFACARDCreateur-wd7zp
+    </a>
+    <a href="https://drive.google.com/drive/folders/1v0bGm_TRJA2-xBTG6pZsWqO22YSHyDdj?usp=sharing" target="_blank">
+      LE GOOGLE DOC OFFICIEL
+    </a>
+    <a href="https://discord.gg/dcr69Nx6aW" target="_blank">
+      LE DISCORD OFFICIEL : discord.gg/dcr69Nx6aW
+    </a>
   </div>
 </body>
 </html>
