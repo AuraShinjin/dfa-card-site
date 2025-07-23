@@ -10,29 +10,22 @@
       box-sizing: border-box;
     }
 
-    body, html {
-      height: 100%;
-      font-family: Arial, sans-serif;
+    body {
+      background-color: black;
       color: white;
-    }
-
-    .background {
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-      background: url('ImagesLivreRegles/4EMEDECOUVERTURE.jpg') no-repeat center center;
-      background-size: cover;
+      font-family: Arial, sans-serif;
     }
 
     .link-container {
       position: absolute;
-      top: 50px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 20px 30px;
       border-radius: 10px;
       text-align: center;
+      z-index: 10;
     }
 
     .link-container h2 {
@@ -51,10 +44,22 @@
     .link-container a:hover {
       text-decoration: underline;
     }
+
+    .full-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
-  <div class="background">
+
+  <div class="image-wrapper">
     <div class="link-container">
       <h2>LA CHAÎNE YOUTUBE OFFICIELLE :</h2>
       <a href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank">www.youtube.com/@DFACARDCreateur-wd7zp</a>
@@ -67,7 +72,11 @@
       <h2>LE DISCORD OFFICIEL :</h2>
       <a href="https://discord.gg/dcr69Nx6aW" target="_blank">discord.gg/dcr69Nx6aW</a>
     </div>
+
+    <img class="full-image" src="ImagesLivreRegles/4EMEDECOUVERTURE.jpg" alt="4ème de couverture">
   </div>
+
 </body>
 </html>
+
 
