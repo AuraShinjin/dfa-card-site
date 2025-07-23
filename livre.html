@@ -17,7 +17,7 @@
 
     header {
       text-align: center;
-      padding: 30px 10px 10px;
+      padding: 20px 10px 10px;
     }
 
     header h1 {
@@ -26,9 +26,28 @@
     }
 
     header p {
-      margin: 10px 0 30px;
+      margin: 10px 0 20px;
       font-style: italic;
       color: #f0f0f0;
+    }
+
+    .return-link {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      padding: 10px 16px;
+      background-color: #8a2be2;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .return-link:hover {
+      background-color: #a95cff;
     }
 
     .page-image {
@@ -45,24 +64,6 @@
       transform: scale(1.02);
     }
 
-    .return-link {
-      display: block;
-      text-align: center;
-      margin: 40px auto;
-      padding: 12px 20px;
-      background-color: #8a2be2;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 8px;
-      width: fit-content;
-      transition: background-color 0.3s ease;
-    }
-
-    .return-link:hover {
-      background-color: #a95cff;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -72,14 +73,14 @@
   </style>
 </head>
 <body>
+  <a class="return-link" href="index.html">← Accueil</a>
+
   <header>
     <h1>Livre de Règles – DFA Card</h1>
     <p>Explore les règles de DFA Card, page après page.</p>
   </header>
 
   <div id="book-pages"></div>
-
-  <a class="return-link" href="index.html">← Retour à l’accueil</a>
 
   <footer>
     <p>© 2025 DFA Card. Créé avec passion par Aura’.</p>
@@ -106,6 +107,7 @@
   </script>
 </body>
 </html>
+
 
 
 
