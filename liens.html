@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Liens – DFA Card</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>4ème de Couverture</title>
   <style>
     body {
-      background-color: #2c003e;
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
-      text-align: center;
+      background-color: #000;
     }
 
-    .top-link {
-      margin: 20px;
+    .image-container {
+      position: relative;
+      width: 100%;
+      max-width: 9094px;
+      margin: 0 auto;
     }
 
-    .top-link a {
-      color: white;
-      text-decoration: none;
-      background-color: #5e1780;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-    }
-
-    .top-link a:hover {
-      background-color: #801fae;
-    }
-
-    .cover-image {
-      max-width: 95%;
+    .image-container img {
+      width: 100%;
       height: auto;
-      margin-top: 10px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      display: block;
+    }
+
+    .link-zone {
+      position: absolute;
+      cursor: pointer;
+    }
+
+    /* Zones invisibles cliquables */
+    .link1 {
+      top: 2275px;
+      left: 1021px;
+      width: 5396px;
+      height: 857px;
+    }
+
+    .link2 {
+      top: 3205px;
+      left: 446px;
+      width: 7108px;
+      height: 1195px;
+    }
+
+    .link3 {
+      top: 3930px;
+      left: 1448px;
+      width: 2530px;
+      height: 975px;
+    }
+
+    /* Rends ces zones invisibles mais actives */
+    .link-zone a {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <div class="top-link">
-    <a href="index.html">← Retour à l’accueil</a>
+  <div class="image-container">
+    <img src="images/4EME%20DE%20COUVERTURE.jpg" alt="4ème de couverture">
+
+    <!-- Zones cliquables -->
+    <div class="link-zone link1"><a href="cartes.html"></a></div>
+    <div class="link-zone link2"><a href="nouvellescartes.html"></a></div>
+    <div class="link-zone link3"><a href="https://example.com/lien3"></a></div>
   </div>
-
-  <img src="ImagesLivreRegles/4EME DE COUVERTURE.jpg" alt="Liens DFA Card" class="cover-image" usemap="#mapLiens" />
-
-  <map name="mapLiens">
-    <!-- Rectangle ROUGE : YouTube -->
-    <area shape="rect" coords="90,165,675,210" href="https://www.youtube.com/@DFACARDCreateur-wd7zp" target="_blank" alt="Chaîne YouTube DFA Card" />
-
-    <!-- Rectangle CYAN : Google Drive -->
-    <area shape="rect" coords="90,222,675,265" href="https://drive.google.com/drive/folders/1v0bGm_TRJA2-xBTG6pZsWqO22YSHyDdj?usp=sharing" target="_blank" alt="Google Drive DFA Card" />
-
-    <!-- Rectangle JAUNE : Discord -->
-    <area shape="rect" coords="90,279,675,320" href="https://discord.gg/dcr69Nx6aW" target="_blank" alt="Serveur Discord DFA Card" />
-  </map>
 </body>
 </html>
-
-
-
