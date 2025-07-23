@@ -2,38 +2,103 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nouvelles Cartes – DFA Card</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #1e1a2d;
+      font-family: Arial, sans-serif;
+      color: #f5f5f5;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      color: #b39ddb;
+    }
+
+    .cartes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 20px 40px;
+      justify-items: center;
+    }
+
+    .cartes-grid img {
+      height: 90vh;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+      background-color: #2e1b4e;
+      padding: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    a {
+      text-decoration: none;
+      color: #9c27b0;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1024px) {
+      .cartes-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cartes-grid img {
+        height: 80vh;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cartes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cartes-grid img {
+        height: auto;
+        max-height: 90vh;
+        max-width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-
   <header>
     <h1>Nouvelles Cartes</h1>
+    <p>Voici les toutes dernières cartes ajoutées récemment au jeu DFA Card.</p>
+    <a href="index.html">← Retour à l'accueil</a>
   </header>
 
-  <div class="top-link">
-    <a href="index.html">← Retour à l’accueil</a>
-  </div>
-
-  <main class="content">
-
-    <p class="page-description">Voici les dernières cartes ajoutées à DFA Card :</p>
-
-    <div class="card-grid">
-      <!-- EXEMPLE DE CARTE -->
-      <!--
-      <div class="card">
-        <img src="cartes/NomDeLaCarte.jpg" alt="Nom de la carte" />
-        <p class="card-name">Nom de la Carte</p>
-      </div>
-      -->
-
-      <!-- Ici tu pourras copier-coller les nouvelles cartes à afficher -->
-    </div>
-
+  <main class="cartes-grid">
+<img src="imagescard/BILLY STEAK HACHE.jpg" alt="Carte BILLY STEAK HACHE" />
+<img src="imagescard/BLITZ.jpg" alt="Carte BLITZ" />
+<img src="imagescard/BLUE LOBSTER.jpg" alt="Carte BLUE LOBSTER" />
+<img src="imagescard/BOGUE DANS LA MATRICE.jpg" alt="Carte BOGUE DANS LA MATRICE" />
+<img src="imagescard/BOMBARDEMENT.jpg" alt="Carte BOMBARDEMENT" />
+<img src="imagescard/BONNIE FNAF 1.jpg" alt="Carte BONNIE FNAF 1" />
   </main>
 
+  <footer>
+    <p>© 2025 DFA Card. Créé par DFA Card Créateur/AuraShinjin.</p>
+  </footer>
 </body>
 </html>
 
