@@ -95,3 +95,19 @@ footer {
 .page-image:hover {
   transform: scale(1.02);
 }
+
+@media screen and (max-width: 600px) {
+  .link-container a {
+    font-size: 20px;
+  }
+
+  .link-container h2 {
+    font-size: 18px;
+  }
+
+  .home-button {
+    font-size: 18px;
+    padding: 8px 14px;
+  }
+}
+
